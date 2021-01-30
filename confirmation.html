@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="card text-center">
+        <div class="card-header">
+          Thank you for choosing us we are very happy to be your travel partner
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Your booking has been confirmed ! </h5>
+          <p class="card-text">Do you like our service? </p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">YES</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">MAYBE</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">NO</label>
+          </div>
+       <button id="submitReview" class="btn btn-primary">Submit </button>
+        </div>
+        
+        <h4 id="reviewUpdate"></h4>
+
+        <div class="card-footer text-muted">
+          Help Line- +8664321
+        </div>
+      </div>
+   <script>
+     document.getElementById('submitReview').addEventListener('click',function() {
+       document.getElementById('reviewUpdate').innerText="Thanks For Your Review";
+     })
+
+     
+   </script>
+</body>
+</html>
